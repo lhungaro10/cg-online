@@ -43,9 +43,15 @@ export const RadioContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 20rem;
     height: 10rem;
     border-radius: 8px;
     gap: 1rem;
+`
+
+export const Radio = styled.h3`
+    font-size: 2rem;
+    font-weight: 700;
+    color: ${props=> props.theme['blue-700']};
 `

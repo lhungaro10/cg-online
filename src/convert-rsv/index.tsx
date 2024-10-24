@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Header } from "../common/components/header";
-import { Container, Form, Input, RadioContainer } from "./styles";
+import { Container, Form, Input, Radio, RadioContainer } from "./styles";
 import { ArrowRight } from "@phosphor-icons/react";
 import { Button } from "@mui/material";
 
@@ -142,10 +142,13 @@ export function ConvertHSL() {
                 />
 
             <Container>
-
+                <RadioContainer>
+                    <Radio>R</Radio>
+                    <Radio>G</Radio>
+                    <Radio>B</Radio>
+                </RadioContainer>
                 <Form>
 
-                
                     <Input 
                         type="number"
                         placeholder="R"
@@ -203,6 +206,11 @@ export function ConvertHSL() {
                     />
                     
                 </Form>
+                <RadioContainer>
+                    <Radio>H</Radio>
+                    <Radio>S</Radio>
+                    <Radio>L</Radio>
+                </RadioContainer>
                     <RadioContainer>
                         <Button variant="contained" color="primary" onClick={handleConvertColor}>Convert</Button>
                         <Button variant="contained" color="primary" onClick={handleChangeConvertType}>Change Convertion</Button>
